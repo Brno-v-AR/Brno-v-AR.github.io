@@ -1,0 +1,145 @@
+
+/* -------------- BODY, HEADLINES, PARAGRAPHS ------------- */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    min-width: 360px;
+  }
+
+  body > *:not(h1) {
+    max-width: 65%;
+    margin: auto;
+  }
+  
+  h1 {
+    background-color: #DA2128;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  h2 {
+    color: #DA2128;
+    padding: 50px 0px 10px 0px;
+    font-size: 26px;
+  }
+  
+  p {
+    text-align: justify;
+    padding-left: 20px;
+  }
+  
+  p.about {
+    margin-bottom: 50px;
+  }
+
+  p.hint {  
+    font-style: italic;
+    font-size: 13px;
+    color: #666666;
+    padding-bottom: 10px;
+  }
+
+  /* ------------------ TRIANGLE AFTER H1 ------------------- */
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 20px 20px 20px;
+    border-color: transparent transparent #DA2128 transparent;
+    transform: rotate(180deg);
+    margin: auto;
+  }
+  
+  /* ------------------ LIST STYLING ------------------------ */
+  ol, ul {
+    padding-left: 50px;
+  }
+
+  /* ------------ ORDERED LIST ------------ */
+
+  ol {
+    list-style: none; /*dont show original numbers*/
+  }
+  
+  ol li {
+    border-bottom: 1px solid #bbbbbb;
+    position: relative;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  ol li::before {
+    content: counter(list-item);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* top and transform for aligning the circle to the center */
+  }
+  
+  /* Remove border from last list item */
+  ol li:last-child {
+      border-bottom: none;
+    }
+    
+  .item-title {
+    cursor: pointer; /*sets the cursor style to a pointing hand*/
+    font-weight: bold;
+  }
+  
+  .item-description {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    color: #666666;
+  }
+  
+  .item-description.open {
+    display:inline-block;
+    hyphens: auto;
+  }
+
+  /* ------------------ BUTTONS SHOWCASE -------------------- */
+  .buttons-showcase {
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px 0 5px;
+  }
+  
+  .button-text {
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+    color: #666666;
+  }
+  
+  img {
+    width: 20%;
+    min-width: 60px;
+    height: auto;
+    border-radius: 50%;
+  }
+  

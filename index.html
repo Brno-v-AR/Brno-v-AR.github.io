@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brno v AR</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="index-style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+<body>
+    <!-- HEADER -->
+    <h1>Brno v AR</h1>
+    <div class="triangle"></div>
+
+    <!-- SPUSTENIE MODELU -->
+    <h2>Spuštění modelu v AR</h2>
+    <p class="hint">Pro více informací klikněte na položku v seznamu.</p>
+    <ol>
+        <li>
+            <div class="item-title">Povolení přístupu k poloze v mobilu</div>
+            <div class="item-description">Pro lepší výsledek můžete kalibrovat signál GPS, např. v aplikaci Mapy Google.</div>
+        </li>
+        <li>
+            <div class="item-title">Otevřete některý z prohlížečů: Chrome nebo Firefox</div>
+            <div class="item-description">U jiných typů prohlížečů není zaručena kompatibilita s aplikací.</div>
+        </li>
+        <li>
+            <div class="item-title">
+              Klikněte na toto tlačítko <button onclick="copyToClipboard()"><i class="fa fa-copy"></i></button> a spusťte zkopírovaný odkaz v otevřeném prohlížeči.              
+            </div>
+            <div class="item-description">Případně můžete zkopírovat a otevřít tento odkaz: <a href="./app">https://brno-v-ar.github.io/app</a></div>
+        </li>
+        <li>
+            <div class="item-title">Povolte prohlížeči přístup k umístění a fotoaparátu</div>
+            <div class="item-description">
+              Povolení jsou vyžadována pro lepší zážitek z rozšířené reality.
+              Oprávnění k poloze slouží k přesnému umístění modelu v křižovatce a oprávnění ke kameře slouží k zobrazení modelu na mobilním zařízení.
+              Tato stránka nikdy neukládá a nebude ukládat informace o poloze ani případně ukládat záběry z kamery zařízení.
+            </div>
+        </li>
+        <li>
+          <div class="item-title">Potvrďte vyskakovací okno pro zobrazení polohy křižovatky</div>
+          <div class="item-description">Pokud vyskakovací okno nepotvrdíte, zobrazí se model v místě vaší aktuální polohy.</div>
+        </li>
+        <li>
+            <div class="item-title">Projděte se po náměstí</div>
+            <div class="item-description">Pokud máte nějaké problémy, řešení najdete v dolní části často kladených otázek nebo můžete
+              problémy/nápady/tipové připomínky zaslat na e-mail uvedený v dolní části stránky.</div>
+        </li>
+    </ol>   
+
+    <!-- OVLADANIE MODELU -->
+    <h2>Ovládání modelu</h2> 
+    <p>V aplikaci jsou k dispozici 3 tlačítka. Zapnutím tlačítka se zobrazí prvek modelu zobrazený na tlačítku. Aplikace umožňuje tyto objekty skrýt/zobrazit:</p>
+    <div class="buttons-showcase">
+      <div class="button-container">
+        <img src="images/infoButton.png" alt="tlačítko pro informace">
+        <p class="button-text">popis významných prvků modelu</p>
+      </div>
+      <div class="button-container">
+        <img src="images/treeButton.png" alt="tlačítko pro stromy">
+        <p class="button-text">stromy</p>
+      </div>
+      <div class="button-container">
+        <img src="images/buildingButton.png" alt="tlačítko pro budovu">
+        <p class="button-text">návrh budoucí budovy</p>
+      </div>
+    </div>     
+
+    <!-- FAQ -->
+    <h2>Často kladené otázky a odpovědi</h2>
+    <ol class="item-list">
+        <li>
+          <div class="item-title">Pozadí za modelem je bílé</div>
+          <div class="item-description">Nejčastěji se jedná o problém neautorizovaného fotoaparátu v prohlížeči.
+            Pokud jste v prohlížeči povolili kameru, je možné, že používáte prohlížeč, který není touto aplikací podporován.
+            Pokud je to možné, zkuste použít prohlížeč Chrome nebo Firefox.
+          </div>
+        </li>
+        <li>
+          <div class="item-title">Model neustále mění polohu</div>
+          <div class="item-description">Zkontrolujte kvalitu signálu GPS nebo zkuste zkalibrovat mobilní kompas, například pomocí aplikace Google Maps.</div>
+        </li>
+        <li>
+          <div class="item-title">Chci změnit umístění zobrazení</div>
+          <div class="item-description">Stačí znovu načíst stránku a zvolit novou polohu (ne)potvrzením vyskakovacího okna s textem <q><i>Chcete zobrazit model na křižovatce Křídlovická?</i></q>.</div>
+        </li>
+    </ol>   
+    
+    <!-- QUESTIONNAIRE -->
+    <h2>Dotazník</h2>
+    <p>
+      Svůj názor na projekt rekonstrukce můžete vyjádřit v dotazníku, který je k dispozici na tomto odkazu:
+      <a href="https://forms.gle/kSZk95kTWBJbcwbV9">https://forms.gle/kSZk95kTWBJbcwbV9</a>
+    </p>
+    
+    <!-- ABOUT -->
+    <h2>O projektu</h2>
+    <p>
+      Primárním cílem projektu je pomocí moderních technologií přispět k zatraktivnění městského plánování.
+      Sekundárním cílem je zapojení obyvatel do procesu tvorby komunitního veřejného prostoru.
+      Projekt vznikl v rámci bakalářské práce Fakulty informatiky Masarykovy univerzity ve spolupráci se studenty Fakulty architektury VUT v Brně v roce 2023.
+    </p>
+
+    <!-- CONTACTS -->
+    <h2>Kontakt</h2> 
+    <p class="about">email: <a href = "mailto: brnovar@gmail.com">brnovar@gmail.com</a></p>  
+
+    <!------------------- SCRIPT ------------------->
+    <script src="index-script.js"></script>
+</body>
+</html>
